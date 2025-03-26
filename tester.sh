@@ -4,13 +4,13 @@
 mkdir -p "front_pages"
 
 # Start and end dates
-start_date="2024-01-01"
+start_date="2012-07-11"
 end_date="2025-03-17"
 
 # Convert start_date to seconds since epoch
 current_date="$start_date"
 
-while [[ "$current_date" != "$(date -I -d "$end_date + 1 day")" ]]; do
+while [[ "$current_date" != "$(date -I -d "$end_date + 5 day")" ]]; do
     # Format the output filename
     output_file="front_pages/${current_date}.pdf"
     
@@ -22,7 +22,7 @@ while [[ "$current_date" != "$(date -I -d "$end_date + 1 day")" ]]; do
     curl -s -o "$output_file" "$url"
     
     # Move to the next day
-    current_date=$(date -I -d "$current_date + 1 day")
+    current_date=$(date -I -d "$current_date + 5 day")
 done
 
 echo "Download complete."
