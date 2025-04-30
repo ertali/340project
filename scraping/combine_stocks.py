@@ -1,13 +1,13 @@
 import pandas as pd
 
 # Load the data
-spy_df = pd.read_csv("data/prev_day_change/SPY.csv")
-dia_df = pd.read_csv("data/prev_day_change/DIA.csv")
-ief_df = pd.read_csv("data/prev_day_change/IEF.csv")
-iwm_df = pd.read_csv("data/prev_day_change/IWM.csv")
-qqq_df = pd.read_csv("data/prev_day_change/QQQ.csv")
-tlt_df = pd.read_csv("data/prev_day_change/TLT.csv")
-vt_df = pd.read_csv("data/prev_day_change/VT.csv")
+spy_df = pd.read_csv("../data/prev_day_change/SPY.csv")
+dia_df = pd.read_csv("../data/prev_day_change/DIA.csv")
+ief_df = pd.read_csv("../data/prev_day_change/IEF.csv")
+iwm_df = pd.read_csv("../data/prev_day_change/IWM.csv")
+qqq_df = pd.read_csv("../data/prev_day_change/QQQ.csv")
+tlt_df = pd.read_csv("../data/prev_day_change/TLT.csv")
+vt_df = pd.read_csv("../data/prev_day_change/VT.csv")
 embeddings_df = pd.read_csv("full_features_combined_clean.csv")
 
 # combine all stock data but only prev_day_percent_change

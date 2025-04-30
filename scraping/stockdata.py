@@ -30,7 +30,7 @@ def save_daily_data(symbol):
     response = requests.get(f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={symbol}&apikey={api_key}&outputsize=full&datatype=csv")
     if response.status_code == 200:
         data = response.text # or response.text or response.content
-        f = open(f"data/{symbol}.csv", "w")
+        f = open(f"../data/{symbol}.csv", "w")
         f.write(data)
         f.close()
 

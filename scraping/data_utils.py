@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 def add_prev_day_change(csv_file):
-    df = pd.read_csv(f'data/{csv_file}', parse_dates=['timestamp'])
+    df = pd.read_csv(f'../data/{csv_file}', parse_dates=['timestamp'])
 
     # Sort by timestamp to ensure chronological order
     df.sort_values(by='timestamp', inplace=True)
@@ -17,8 +17,8 @@ def add_prev_day_change(csv_file):
 
 def write_prev_day_change(csv_file):
     df = add_prev_day_change(csv_file)
-    os.makedirs("data/prev_day_change", exist_ok=True)
-    df.to_csv(f"data/prev_day_change/{csv_file}", index=False)
+    os.makedirs("../data/prev_day_change", exist_ok=True)
+    df.to_csv(f"../data/prev_day_change/{csv_file}", index=False)
 
 def update_all_prev_day_change(file_list):
     for stock in file_list:
