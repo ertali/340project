@@ -13,7 +13,7 @@ Our data was obtained from the front page of the New York Times from 2013 to 202
 We used a deep neural network with dense and dropout layers. All in all, we had three primary datasets: embeddings on full pages, embeddings on articles, and cosine similarity/MLNI (to be explained below). For each dataset, we created a preliminary neural network for regression, a network for classification, ran a hyperparameter tuning session for classification, and a session for regression. This can be seen in ‘neuralnetwork.ipynb.’ Each hyperparameter tuning session ran over 90 trials and we looked at the top 15 to draw our conclusions. 
 
 
-### How to run our code (if desired):
-Run stockdata.py and then data_utils.py after acquiring an AlphaVantage API key
-Acquire embeddings by going through Embeddings.ipynb (you will likely have to edit some things to make it work outside of Colab)
-Run neural network code in Neuralnetwork.ipynb, using the CSVs generated in the prior two steps
+### How to run our code (if desired):  
+Run `stockdata.py` and then `data_utils.py` after acquiring an AlphaVantage API key  
+Acquire embeddings by going through `Embeddings.ipynb` (you will likely have to edit some things to make it work outside of Colab)  
+Run neural network code in `Neuralnetwork.ipynb`, using the CSVs generated in the prior two steps  
