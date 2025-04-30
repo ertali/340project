@@ -12,6 +12,7 @@ stocks = [
     "TLT", #20+ year treasuy bond
     "IEF" #7-10 year treasury bond ETF
 ] #this goes in symbol field, not function
+
 commodities = [
     "WTI", #WTI Crude Oil
     "BRENT", #Brent Crude Oil (European)
@@ -37,5 +38,3 @@ def save_all():
     for i in stocks:
         save_daily_data(i)
 save_all()
-
-    # print(data)

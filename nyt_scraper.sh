@@ -3,21 +3,15 @@
 # Create the directory if it doesn't exist
 mkdir -p "front_pages"
 
-# Start and end dates
-start_date="2012-07-11"
-end_date="2025-03-17"
+start_date="2013-01-26"
+end_date="2023-08-27"
 
 # Convert start_date to seconds since epoch
 current_date="$start_date"
 
 while [[ "$current_date" != "$(date -I -d "$end_date + 5 day")" ]]; do
-    # Format the output filename
     output_file="front_pages/${current_date}.pdf"
-    
-    # Construct the URL
     url="https://static01.nyt.com/images/$(date -d "$current_date" +%Y/%m/%d)/nytfrontpage/scan.pdf"
-    
-    # Download the file using curl
     echo "Downloading: $url -> $output_file"
     curl -s -o "$output_file" "$url"
     
