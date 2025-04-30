@@ -14,6 +14,6 @@ We used a deep neural network with dense and dropout layers. All in all, we had 
 
 
 ### How to run our code (if desired):  
-Run `stockdata.py` and then `data_utils.py` after acquiring an AlphaVantage API key  
-Acquire embeddings by going through `Embeddings.ipynb` (you will likely have to edit some things to make it work outside of Colab)  
-Run neural network code in `Neuralnetwork.ipynb`, using the CSVs generated in the prior two steps  
+- Run `stockdata.py` and then `data_utils.py` after acquiring an AlphaVantage API key  
+- Acquire embeddings by going through `Embeddings.ipynb` (you will likely have to edit some things to make it work outside of Colab)  
+- Run neural network code in `Neuralnetwork.ipynb`, using the CSVs generated in the prior two steps  
