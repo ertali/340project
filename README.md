@@ -1,4 +1,4 @@
-## Refer to our report for a full description of what each file does
+## Refer to the Report PDF for more details, including the conclusion and descriptions of the files
 ## DS 340 Final Project by Emir Tali and Sam Cowan
 
 ### Introduction:
